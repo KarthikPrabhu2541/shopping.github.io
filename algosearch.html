@@ -1,0 +1,1422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="finallogo.jpeg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="view.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Shopping website</title>
+</head>
+<body>
+    <div class="main">
+        <div class="boxshad" id="header">
+            <div class="logohead">
+                <div class="innerlogo">
+                <a href="shopping.html"><img src="finallogo.jpeg" class="logo"></a>
+                </div>
+            </div>
+            <div class="navsearchhead">
+                <div class="search">
+                    <div class="flexsearch">
+                        <input type="search" class="searching" placeholder="Search" id="searchi" onkeydown="myFunction(this)">
+                   <img src="search.jpeg" style="width:16px;height:16px">
+                    </div>
+              </div>
+                <div class="nav">
+                    <div class="navbut" id="nav1" onmouseover="myfunc1()" onmouseout="myfuncover()">
+                        Men
+                    </div>
+                   
+                    <div class="navbut" id="nav2" onmouseover="myfunc2()" onmouseout="myfuncover()">
+                        Women
+                    </div>
+                    <div class="navbut" id="nav3" onmouseover="myfunc3()" onmouseout="myfuncover()">
+                        Accessories
+                    </div>
+                    <div class="navbut" id="nav4" onmouseover="myfunc4()" onmouseout="myfuncover()">
+                        Groceries
+                    </div>
+                   
+                </div>
+                
+            </div>
+            <div class="personhead" onmouseover="myfuncprof()">
+                <img class="personlogo" src="profile1.jpeg" onmouseover="myfuncprof()" onmouseout="myfuncover()">
+            </div>
+        </div>
+        </div>
+        <div class="back">
+
+        </div>
+        <div id="disp" style="position:absolute;width:100%;height:90px;font-size:25px;margin-top:-700px;text-align:center;display:inline;">
+            Search results:
+            <p id="in" style="height:40px;color:black;font-size:20px;text-align:center;display:inline"></p>
+            <p id="innext" style="height:40px;color:black;font-size:20px;text-align:center;"></p>
+        </div>
+        <div class="mid-section" style="margin-top:-650px;">
+            <div class="filters">
+                <span style="position:relative; top:22px">FILTERS</span>
+                <button id="clear" onclick="myClear()" style="width:100px;height:30px;background-color:rgb(235, 10, 115);color:white;border-radius:20px;margin-left:40%;cursor:pointer;margin-bottom: 10px;position: relative;left: 10px;">Clear all</button>
+                <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                <div class="gender">
+                    <input type="radio" name="gender" id="gender"> Men<br>
+                    <input type="radio" name="gender" id="gender"> Women   
+                </div>
+                <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                <div class="categories">
+                    <span style="display: block;"></span>
+                        <input type="checkbox" name="categories" id="categories"> <label>Tshirts</label><br>
+                        <input type="checkbox" name="categories" id="categories"> <label>Jeans</label><br>
+                        <input type="checkbox" name="categories" id="categories"> <label>Shirts</label><br>
+                        <input type="checkbox" name="categories" id="categories"> <label>Sweatshirts</label><br>
+                        <input type="checkbox" name="categories" id="categories"> <label>Jackets</label><br>
+                        <input type="checkbox" name="categories" id="categories"> <label>Casual Shoes</label><br>
+                        <input type="checkbox" name="categories" id="categories"> <label>Trousers</label><br>
+                </div>
+                <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                <div class="brands">
+                    <span style="display: block">BRANDS</span>
+                    <input type="checkbox" name="brands" id="brands"> <label>Roadster</label><br>
+                    <input type="checkbox" name="brands" id="brands"> <label>KLOTTHE</label><br>
+                    <input type="checkbox" name="brands" id="brands"> <label>SOJANYA</label><br>
+                    <input type="checkbox" name="brands" id="brands"> <label>Mast & Harbour</label><br>
+                    <input type="checkbox" name="brands" id="brands"> <label>Levis</label><br>
+                    <input type="checkbox" name="brands" id="brands"> <label>HIGHLANDER</label><br>
+                    <input type="checkbox" name="brands" id="brands"> <label>WROGN</label><br>
+                </div>
+                <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                <div class="price">
+                    <span style="display: block">PRICE</span>
+                    <input type="checkbox" name="price" id="price"> <label>Rs. 310 to Rs. 2123</label><br>
+                    <input type="checkbox" name="price" id="price"> <label>Rs. 2123 to Rs. 3936</label><br>
+                    <input type="checkbox" name="price" id="price"> <label>Rs. 3936 to Rs. 5749</label><br>
+                    <input type="checkbox" name="price" id="price"> <label>Rs. 5749 to Rs. 7562</label><br>
+                </div>
+            </div>
+            <div class="collection">
+                
+                    <div class="container" id="levis slim fit casual shirt">
+                        <a href="description.html"><img src="shirt2.jpeg" alt=""  class="shirt" style="margin-left:-5px;width:263px"></a>
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">Levis</a>
+                        <span class="out-description">Slim fit Casual Shirt</span>
+                        <span class="price">Rs.849 <del>1699</del> (50%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 4.1</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 11.4k reviews</span>
+                        </div>
+                    </div>
+                    <div class="container" id="roadster mens casual shirt">
+                        <img src="roadster1.jpeg" alt="" class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">Roadster</a>                   
+                        <span class="out-description">Mens Casual Shirt</span>
+                        <span class="price">Rs.584 <del>1299</del> (55%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 4.0</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 1.4k reviews</span>
+                        </div>
+                    </div>
+                    <div class="container" id="dennis lingo regular fit casual shirt">
+                        <img src="dennis.jpeg" alt="" class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">Dennis Lingo</a>                   
+                        <span class="out-description">regular fit Casual Shirt</span>
+                        <span class="price">Rs.764 <del>1699</del> (55%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 3.9</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 500 reviews</span>
+                        </div>
+                    </div>
+                    <div class="container" id="levis cotton casual shirt">
+                        <img src="leviscot.jpeg" alt="" class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">Levis</a>
+                        <span class="out-description">Cotton Casual Shirt</span>
+                        <span class="price">Rs.949 <del>1899</del> (50%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 4.4</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 11.4k reviews</span>
+                        </div>
+                    </div>
+
+            
+                
+                    <div class="container" id="wild west slim fit casual shirt">
+                        <img src="wildwest.jpeg" alt=""  class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">WILD WEST</a>
+                        <span class="out-description">Slim fit Casual Shirt</span>
+                        <span class="price">Rs.593 <del>1799</del> (67%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 4.2</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 2k reviews</span>
+                        </div>
+                    </div>
+                    <div class="container" id="highlander men fit casual shirt">
+                        <img src="highlander1.jpeg" alt="" class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">Highlander</a>                   
+                        <span class="out-description">Men fit Casual Shirt</span>
+                        <span class="price">Rs.849 <del>1699</del> (50%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 3.5</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 100 reviews</span>
+                        </div>
+                    </div>
+                    <div class="container" id="invictus slimfit casual shirt">
+                        <img src="invictus.jpeg" alt="" class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">INVICTUS</a>                   
+                        <span class="out-description">Slim fit Casual Shirt</span>
+                        <span class="price">Rs.719 <del>1599</del> (55%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 4.3</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 11.4k reviews</span>
+                        </div>
+                    </div>
+                    <div class="container" id="roadster casual shirt">
+                        <img src="roadster2.jpeg" alt="" class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">Roadster</a>
+                        <span class="out-description"> Casual Shirt</span>
+                        <span class="price">Rs.549 <del>1699</del> (65%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 3.9</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 1k reviews</span>
+                        </div>
+                    </div>
+                
+        
+                    <div class="container" id="levis slim fit casual shirt2">
+                        <img src="levis2.jpeg" alt=""  class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">Levis</a>
+                        <span class="out-description">Slim fit Casual Shirt</span>
+                        <span class="price">Rs.849 <del>1699</del> (50%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 4.1</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 11.4k reviews</span>
+                        </div>
+                    </div>
+                    <div class="container" id="mastharbour slim fit casual shirt">
+                        <img src="mast.jpeg" alt="" class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">Mast & Harbour</a>                   
+                        <span class="out-description">Slim fit Casual Shirt</span>
+                        <span class="price">Rs.769 <del>2199</del> (65%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 4.0</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 1k reviews</span>
+                        </div>
+                    </div>
+                    <div class="container" id="levis mens casual shirt">
+                        <img src="levis3.jpeg" alt="" class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">Levis</a>                   
+                        <span class="out-description">Mens Casual Shirt</span>
+                        <span class="price">Rs.949 <del>1699</del> (45%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 4.5</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 4k reviews</span>
+                        </div>
+                    </div>
+                    <div class="container" id="highlander slimfit casual shirt">
+                        <img src="highlander2.jpeg" alt="" class="shirt">
+                        <hr style="width:200px;background-color:rgb(209, 209, 209);border-width: 1; margin-top: 10px;">
+                        <a href="" class="name">Highlander</a>
+                        <span class="out-description">Slim fit Casual Shirt</span>
+                        <span class="price">Rs.849 <del>1699</del> (50%)</span>
+                        <div class="rating">
+                            <span style="color: grey"> 4.2</span>
+                            <img src="1star.jpeg" alt="" id="star">
+                            <span style="color: grey">| 11.4k reviews</span>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="drop1" id="drop1" style="border-top:solid 1px grey" onmouseover="myfunc1()" onmouseout="myfuncover()">
+        <div class="dropin1">
+            <div class="inleft1">
+                <h4 class="heading1">Topwear</h4>
+                T-Shirts<br>
+                Casual Shirts<br>
+                Formal Shirts<br>
+                Sweatshirts<br>
+                Sweaters<br>
+                Jackets<br>
+                Blazers & Coats<br>
+                Suits<br>
+                Rain Jackets<br>
+                <br>
+                <hr>
+                <h4 class="heading1">Indian & Festive wear</h4>
+                Kurtas & Kurta Sets<br>
+                Sherwanis<br>
+                Nehru Jackets<br>
+                Dhotis<br>
+                
+                
+                
+             </div>
+             <div class="inmiddle1">
+                <h4 class="heading1">Bottomwear</h4>
+                Jeans<br>
+                Casual Trousers<br>
+                Formal Trousers<br>
+                Shorts<br>
+                Track Pants & Joggers<br>
+                <br>
+                <hr>
+                <h4 class="heading1">Innerwear & Sleepwear</h4>
+            Briefs & Trunks<br>
+            Boxers<br>
+            Vests<br>
+            Sleepwear & Loungewear<br>
+            Thermals<br>
+            <hr>
+            <h4 class="heading1">Plus Size</h4>
+             </div>
+        <div class="inright1">
+            
+            
+            <h4 class="heading1">Footwear</h4>
+            Casual Shoes<br>
+            Sports Shoes<br>
+            Formal Shoes<br>
+            Sneakers<br>
+            Sandals & Floaters<br>
+            Flip Flops<br>
+            Socks<br>
+            <h4 class="heading1">Personal Care & Grooming</h4><br>
+            <h4 class="heading1">Sunglasses & Frames</h4><br>
+            <h4 class="heading1">Watches</h4>
+        </div>
+        </div>
+    </div>
+    <div class="drop2" id="drop2" style="border-top:solid 1px grey" onmouseover="myfunc2()" onmouseout="myfuncover()">
+        <div class="dropin2">
+            <div class="inleft2">
+                <h4 class="heading2">Indian & Fusion Wear</h4>
+Kurtas & Suits<br>
+Kurtis, Tunics & Tops<br>
+Sarees<br>
+Ethnic Wear<br>
+Leggings, Salwars & Churidars<br>
+Skirts & Palazzos<br>
+Dress Materials<br>
+Lehenga Cholis<br>
+Dupattas & Shawls<br>
+Jackets<br>
+<br>
+<hr>
+<h4 class="heading2">Belts, Scarves & More</h4>
+<h4 class="heading2">Watches & Wearables</h4><br>
+                
+                
+                
+             </div>
+             <div class="inmiddle2">
+                <h4 class="heading2">Western Wear</h4>
+Dresses<br>
+Tops<br>
+Tshirts<br>
+Jeans<br>
+Trousers & Capris<br>
+Shorts & Skirts<br>
+Co-ords<br>
+Playsuits<br>
+Jumpsuits<br>
+Shrugs<br>
+Sweaters & Sweatshirts<br>
+Jackets & Coats<br>
+Blazers & Waistcoats<br>
+<br>
+<hr>
+<h4 class="heading2">Plus Size</h4>
+</div>
+        <div class="inright2">
+            
+            
+            <h4 class="heading2">Maternity</h4>
+            
+            <h4 class="heading2">Sunglasses & Frames</h4>
+            
+            <hr>
+            <h4 class="heading2">Footwear</h4>
+            Flats<br>
+            Casual Shoes<br>
+            Heels<br>
+            Boots<br>
+            Sports Shoes & Floaters<br>
+            <br>
+            <hr>
+            <h4 class="heading2">Sports & Active Wear</h4>
+            Clothing<br>
+            Footwear<br>
+            Sports Accessories<br>
+            Sports Equipment<br>
+        </div>
+        </div>
+    </div>
+   
+    <div class="drop3" id="drop3" style="border-top:solid 1px grey" onmouseover="myfunc3()" onmouseout="myfuncover()">
+        <div class="dropin3">
+            <div class="inleft3">
+                <h4 class="heading3">Bed Linen & Furnishing </h4>
+                Bed Runners<br>
+                Bedsheets<br>
+                Bedding Sets<br>
+                Bed Cover<br>
+                Sofa Covers<br>
+                <br>
+                <hr>
+                <h4 class="heading3">Flooring</h4>
+                Carpet<br>
+                Floor mats<br>
+                Door mats<br>
+                <h4 class="heading3">Lamps & Lighting </h4>
+                Floor Lamps<br>
+                Table Lamps<br>
+                Wall Lamps<br>
+                
+                
+                
+             </div>
+             <div class="inmiddle3">
+                <h4 class="heading3">Home Decor</h4>
+                Plants & Planters<br>
+                Candles<br>
+                Clock<br>
+                Mirrors<br>
+                Pooja Essentials<br>
+                Fountains<br>
+                Showpieces and Vases<br>
+                <br>
+                <hr>
+                <h4 class="heading3">Curtains</h4>
+            
+            <hr>
+            <h4 class="heading3">Home Gift Sets</h4>
+             </div>
+        <div class="inright3">
+            
+            
+            <h4 class="heading3">Kitchen & Table</h4>
+            Table Runners<br>
+            Dinnerware & Serveware<br>
+            Cups and Mugsv
+            Bakeware & Cookware<br>
+            Kitchen Storage & Tools<br>
+            Bar & Drinkware<br>
+            Table Covers & Furnishings<br>
+            <h4 class="heading3">Storage</h4>
+            Bins<br>
+            Hangers<br>
+            Organisers<br>
+            Hooks & Holders<br>
+            Laundry Bags<br>
+        </div>
+        </div>
+    </div>
+
+   <div class="drop4" id="drop4" style="border-top:solid 1px grey" onmouseover="myfunc4()" onmouseout="myfuncover()">
+        <div class="dropin4">
+            <div class="inleft4">
+                <h4 class="heading4">Jarred or canned goods</h4>
+                Vegetables<br>
+                Spaghetti sauce<br>
+                Ketchup<br>
+                Sweet Jam<br>
+                Soya Sauce<br>
+                <h4 class="heading4">Baking Goods</h4>
+                Cereals<br>
+                Flour<br>
+                Sugar<br>
+                Mixes<br>
+                <br>
+                <hr>
+                <h4 class="heading4">Meat</h4>
+                Lunch Meat<br>
+                Poultry<br>
+                Pork<br>
+                Beef<br>
+                
+                
+                
+             </div>
+             <div class="inmiddle4">
+                <h4 class="heading4">Produce</h4>
+                Fruits<br>
+                Vegetables<br>
+                Dry Fruits<br>
+                <br>
+                <hr>
+                <h4 class="heading4">Cleaners</h4>
+            All purpose<br>
+            Laundry<br>
+            Detergent<br>
+            Dishwash<br>
+            <br>
+            <hr>
+            <h4 class="heading4">Frozen Foods</h4>
+            Individual meals<br>
+            Vegetables<br>
+            Waffles<br>
+            Ice cream<br>
+             </div>
+        <div class="inright4">
+            
+            
+            <h4 class="heading4">Paper Towels</h4>
+            Paper Towels<br>
+            Toilet Paper<br>
+            Aluminium Foil<br>
+            <br>
+            <hr>
+            <h4 class="heading4">Personal Care</h4>
+            Shampoo<br>
+            Hand Soap<br>
+            Shaving Cream<br>
+            <br>
+            <hr>
+            <h4 class="heading4">Dairy</h4>
+            Milk<br>
+            Cheese<br>
+            Eggs<br>
+            Yogurt<br>
+            butter<br>
+        </div>
+        </div>
+    </div>
+   
+    <div class="profile" id="profile" onmouseover="myfuncprof()" onmouseout="myfuncover()" style="border-top:solid 1px grey">
+     <div class="inprofile">
+        <div class="upprofile" style="display:grid;grid-template-columns:40% 70%;">
+            <div class="profilel" style="display:grid;justify-content:center;padding-top:-10px;">
+               <img src="finallogo.jpeg" style="border-radius:50px;height:60px;width:60px;margin-top:10%;">
+            </div>
+            <div class="profilename">
+                <h3 class="username" style="color:rgb(75, 12, 148);margin-bottom:0px;">
+                    Your Name
+                </h3>
+                <p style="font-size:13px;color:rgb(74, 69, 69)">Youremail123@gmail.com</p>
+            </div>
+        </div>
+        <hr style="width:100%">
+        <div class="lowerprofile" style="margin:30px;cursor:pointer">
+
+            Account Settings<br><br>
+            Current Cart<br><br>
+          wish List<br><br>
+          Purchase History<br> <br>   
+          <hr style="width:100%">       <br>
+          Notifications<br><br>
+          Queries<br><br>
+          Payment Options<br><br>
+             <hrstyle="width:100%">
+             About us<br>
+        </div>
+     </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="footer" style="color:rgba(239, 232, 232, 0.726);" >
+        <div class="infoot" style="color:white">
+          <p >Questions? Call 000-999-888-7777</p>
+         <br>
+          <div class="gridn">
+            <div>
+                FAQ 
+            </div>
+            <div>
+                Help Centre
+            </div>
+            <div>
+                Account
+            </div>
+            <div>
+                Media Centre
+            </div>
+            <div>
+                Investor relations
+            </div>
+            <div>
+                Jobs
+            </div>
+            <div>
+                Ways To Pay
+            </div>
+            <div>
+                Terms of Use 
+            </div>
+            <div>
+                Privacy
+            </div>
+            <div>
+                Cookie Preferences
+            </div>
+            <div>
+                Corporate Information
+            </div>
+            <div>
+                Contact Us 
+            </div>
+            <div>
+                Speed Test 
+            </div>
+            <div>
+                Legal Notices
+            </div>
+        
+          </div>
+          <div> 
+            <br>
+            <br>
+            <br>
+              <div class="drop" >
+                <select name="language" id="lang">
+                    <option value="english"><i class="bi bi-globe"></i> English</option>
+                    <option value="hindi"><i class="bi bi-globe"></i> Hindi</option>
+                    <option value="kannada"><i class="bi bi-globe"></i> Kannada</option>
+                  </select>
+              </div>
+            </div>
+            </div>
+            </div>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    color:black;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+img{
+    width: 100%;
+}
+
+.main{
+    /*background-image: url("../images/backgroundimg.webp");*/
+    min-height: 100vh;
+}
+
+body{
+                margin:0px;
+                box-sizing: border-box;
+                z-index:1.5;
+                transition:all 0.5s ease; 
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .boxshad
+            {
+                box-shadow: 2px 5px 8px #888888;
+                height:90px;
+               width:100%;
+               position:fixed;
+               display:grid;
+               grid-template-columns:9% auto 9%;
+               background-color:white;
+               z-index:100;
+               z-index:2;
+            }
+            .header
+            {
+
+               height:80px;
+               width:100%;
+               position:fixed;
+               display:grid;
+               grid-template-columns:9% auto 9%;
+               background-color:white;
+               z-index:2;
+            }
+            .logohead
+            {
+                margin:0px;
+                display:grid;
+                justify-content:center;
+                
+            }
+            
+            .logo
+            {
+                margin-top:20%;
+                height:50px;
+                transition:all 1s ease;
+                cursor:pointer;
+            }
+            .logo:hover{
+                transform:scale(1.3);
+                
+            }
+            .nav
+            {
+                
+                width:65%;
+                display:flex;
+                height:90px;
+                justify-content:space-evenly;
+            }
+
+            .navbut
+            {
+                font-size:18px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color:black;
+                padding-top:27px;
+                height:65%;
+                cursor:pointer;
+
+            }
+            #nav1:hover{
+                border-bottom: 5px solid rgb(0, 119, 255);
+                
+            }
+            #nav2:hover{
+                border-bottom: 5px solid rgb(188, 16, 222);
+                
+            }
+            #nav3:hover{
+                border-bottom: 5px solid crimson;
+                
+            }
+            #nav4:hover{
+                border-bottom: 5px solid rgb(160, 235, 10);
+                
+            }
+        
+            .search{
+                height:80px;
+                 float:left;
+                 width:35%;
+                 display:grid;
+                 justify-content:space-evenly;
+                 padding:auto auto auto auto;
+            }
+            
+            .searching
+            {
+                 height:35px;
+                 font-size:17px;
+                 margin-top:auto;
+                 margin-bottom:auto;
+                 width:300px;
+                 transition:1s;
+                 border-radius:2px;
+                 padding:5px;
+                 background-color:rgba(223, 221, 221, 0.347);
+                 border:none;
+                 color:black;
+            }
+            
+            .searching:focus{
+                background-color:rgba(100, 96, 96, 0.854);
+                color:white;
+               
+            }
+            .flexsearch
+            {
+                margin-top:auto;
+                margin-bottom:auto;
+            }
+            .searchbut
+            {
+                margin:auto auto auto auto;
+                width:20px;
+                transform:scale(1.2);
+                cursor:pointer;
+            }
+            .personhead
+            {
+                width:auto;
+                float:left;
+                display:grid;
+                justify-content:space-evenly;
+            }
+            .personlogo
+            {
+                width:50px;
+                margin-top:30%;
+                cursor:pointer;
+                background-color:white;
+                border-radius:50px;
+            }
+            @media only screen and (max-width: 750px) {
+                
+                .search
+                {
+                   width:100%;
+                   height:50%;
+              
+                }
+              
+                 .nav {
+                  width: 100%;
+                  height:50%;
+                  
+                }
+                .navbut
+                {
+                  padding-top:10px;
+                  height:63%;
+                }
+                          }
+                          hr{
+                width:90%;
+                margin-left:auto;
+                margin-right:auto;
+             }
+             .heading1{
+                font-size:16px;
+                color:rgb(0, 157, 255);
+             }
+             
+            .drop1
+            {
+                position:fixed;
+                top:90px;
+                border-radius:20px;
+                height:400px;
+                width:70%;
+                margin-left:15%;
+                overflow:scroll;
+                display:none;
+                z-index:2;
+                background-color:white;
+                font-size:15px;
+                padding-top:20px;
+                transition:all 1s ease;
+            }
+            .drop1:hover{
+                transition:all 1s ease;
+            }
+            .dropin1
+            {
+                display:grid;
+                grid-template-columns:33% 33% 33%;
+            }
+            .inleft1
+            {
+                
+                text-align:left;
+                margin:20px;
+                margin-top:-10px;
+            }
+            .inright1
+            {
+                
+                text-align:left;
+                margin:20px;
+                margin-top:-10px;
+            }
+            .inmiddle1
+            {
+                margin:20px;
+                text-align:left;
+                margin-top:-10px;
+            }
+            .heading2{
+                font-size:16px;
+                color:rgb(188, 16, 222);
+             }
+            .drop2
+            {
+                position:fixed;
+                top:90px;
+                border-radius:20px;
+                height:400px;
+                width:70%;
+                margin-left:15%;
+                overflow:scroll;
+                display:none;
+                z-index:2;
+                background-color:white;
+                font-size:15px;
+                padding-top:20px;
+            }
+            .dropin2
+            {
+                display:grid;
+                grid-template-columns:33% 33% 33%;
+            }
+            .inleft2
+            {
+                
+                text-align:left;
+                margin:20px;
+                margin-top:-10px;
+            }
+            .inright2
+            {
+                
+                text-align:left;
+                margin:20px;
+                margin-top:-10px;
+            }
+            .inmiddle2
+            {
+                margin:20px;
+                text-align:left;
+                margin-top:-10px;
+            }
+            .heading3{
+                font-size:16px;
+                color:crimson;
+             }
+             
+            .drop3
+            {
+                padding-top:20px;
+                position:fixed;
+                top:90px;
+                border-radius:20px;
+                height:400px;
+                width:70%;
+                margin-left:15%;
+                overflow:scroll;
+                display:none;
+                z-index:2;
+                background-color:white;
+                font-size:15px;
+                
+            }
+            .dropin3
+            {
+                display:grid;
+                grid-template-columns:33% 33% 33%;
+            }
+            .inleft3
+            {
+                
+                text-align:left;
+                margin:20px;
+                margin-top:-10px;
+            }
+            .inright3
+            {
+                
+                text-align:left;
+                margin:20px;
+                margin-top:-10px;
+            }
+            .inmiddle3
+            {
+                margin:20px;
+                text-align:left;
+                margin-top:-10px;
+            }
+            .heading4{
+                font-size:16px;
+                color:rgb(160, 235, 10);
+             }
+             
+            .drop4
+            {
+                padding-top:20px;
+                position:fixed;
+                top:90px;
+                border-radius:20px;
+                height:400px;
+                width:70%;
+                margin-left:15%;
+                overflow:scroll;
+                display:none;
+                z-index:2;
+                background-color:white;
+                font-size:15px;
+                
+            }
+            .dropin4
+            {
+                display:grid;
+                grid-template-columns:33% 33% 33%;
+            }
+            .inleft4
+            {
+                
+                text-align:left;
+                margin:20px;
+                margin-top:-10px;
+            }
+            .inright4
+            {
+                
+                text-align:left;
+                margin:20px;
+                margin-top:-10px;
+            }
+            .inmiddle4
+            {
+                margin:20px;
+                text-align:left;
+                margin-top:-10px;
+            }
+           
+            .profile
+            {
+                position:fixed;
+                top:90px;
+                border-radius:20px;
+                right:0px;
+                display:none;
+                height:350px;
+                overflow:scroll;
+                width:40%;
+                max-width:400px;
+                background-color:white;
+                z-index:2;
+            }
+            .dark{
+                z-index:1;
+            }
+            .back
+            {
+                height:80px;
+                width:100%;
+            }
+
+.filters{
+    width: 15%;
+    margin-left: 20px;
+    margin-top: -60px;
+}
+
+#clear{
+    margin-left: 70px;
+    background-color: white;
+    color: rgb(255, 74, 161);
+    border: none;
+}
+
+.gender{
+    margin-top: 10px;
+    accent-color: rgb(255, 74, 161);
+}
+
+#gender{
+    margin-top: 5px;
+    accent-color: rgb(255, 74, 161);
+}
+
+#categories{
+    margin-top: 5px;
+    accent-color: rgb(255, 74, 161);
+}
+
+#brands{
+    margin-top: 5px;
+    accent-color: rgb(255, 74, 161);
+}
+
+#price{
+    margin-top: 5px;
+    accent-color: rgb(255, 74, 161);
+}
+
+.filters span{
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.filter p{
+    color: grey;
+}
+
+label{
+    color: grey;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container{
+    margin-top: 0px;
+    border: 1px solid rgb(222, 222, 222);
+    height: 455px;
+}
+
+.rating{
+    padding-left: 5px;
+    width: 160px;
+    font-weight: 300;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    bottom: 130px;
+    background-color: rgba(255, 255, 255, 0.951);
+}
+
+.name{
+    display: block;
+    text-decoration: none;
+}
+
+.collection{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    justify-content: space-evenly;
+    width: 100%;
+    gap:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mid-section{
+    display: flex;
+}
+
+#star{
+    width: 15px;
+    position: relative;
+    top: 5px;
+}
+
+.shirt{
+    height: 370px;
+    width: 230px;
+    
+}
+
+.out-description{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.collection a{
+    margin-top: 5px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.collection span{
+    font-weight: 300;
+    color: grey;
+    font-size: 14px;
+}
+
+del{
+    color: orange;
+}
+
+.price{
+    color: black;
+    margin-left: 5px;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-row{
+    display: flex;
+    justify-content: space-between;
+}
+.footer
+{
+    color:grey;
+    height:300px;
+    background-color:black;
+    padding:20px;
+    padding-left:40px;
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:left;
+    font-weight:lighter;
+    padding-left:60px;
+    border-top:10px solid rgba(92, 91, 91, 0.333)
+
+}
+
+.infoot
+{
+    color:rgba(128, 128, 128, 0.726);
+  margin-left:auto;
+  margin-right:auto;
+  width:80%;
+  min-width:300px;
+}
+.gridn
+{
+   display:grid;
+   grid-template-columns:25% 25% 25% 25%;
+   gap:10px;
+   color:rgba(239, 232, 238, 0.726);
+}
+
+.gridn > div
+{
+   font-size:13px;
+   font-weight:lighter;
+}
+#lang
+{
+   width:110px;
+   height:40px;
+   text-align:center;
+   background-color:black;
+   color:grey;
+   border-radius:4px;
+   border:2px solid rgba(128, 128, 128, 0.534);
+   font-size:16px;
+   font-weight:lighter;
+}
+    </style>
+    </body>
+    <script>
+        function myClear()
+        {
+            let radio = document.querySelector('input[type=radio][name=gender]:checked');
+            radio.checked=false;
+            for(let i=0;i<7;i++)
+            {
+            let checktype = document.querySelector('input[type=checkbox][name=categories]:checked');
+            checktype.checked=false;
+            }
+            for(let y=0;y<7;y++)
+            {
+            let brandstype = document.querySelector('input[type=checkbox][name=brands]:checked');
+            brandstype.checked=false;
+            }
+            for(let c=0;c<7;c++)
+            {
+            let pricestype = document.querySelector('input[type=checkbox][name=price]:checked');
+            pricestype.checked=false;
+            }
+            
+
+        }
+         let isblue=true;
+         function myFunction(e) {
+  var x = document.getElementById('searchi').value;
+  document.getElementById('in').innerHTML = x;
+  if (event.key === 'Enter') 
+    {
+    document.getElementById('in').innerhtml= e.value;
+   
+  }
+        
+   display(e);
+    }
+    var isresultnull=false;
+    const match=["levis slim fit casual shirt",
+    "roadster mens casual shirt",
+    "dennis lingo regular fit casual shirt",
+    "levis cotton casual shirt",
+    "wild west slim fit casual shirt",
+    "highlander men fit casual shirt",
+    "invictus slimfit casual shirt",
+    "roadster casual shirt",
+    "levis slim fit casual shirt2",
+    "mastharbour slim fit casual shirt",
+    "levis mens casual shirt",
+    "highlander slimfit casual shirt"];
+   function display(e)
+   {
+    var result;
+    var total=0;
+    
+      for(let i=0;i<15;i++)
+      {
+        result=stringmatch(match[i],e.value);
+        if(result==e.value)
+        {
+            document.getElementById(match[i]).style.display="inline";
+            
+        }
+        else if(result==match[i]){
+            document.getElementById(match[i]).style.display="none";
+            total++;
+        }
+      }
+      
+     if(event.key=='Enter')
+     { if(total==12)
+      {
+        if(isred==false)
+        {
+        document.getElementById('innext').innerHTML="no results found";
+        isresultnull=true;
+      }
+      else if(isred==true)
+      {
+        document.getElementById('innext').innerHTML=" ";
+        isresultnull=false;
+      }
+    }
+    }
+   }
+   function stringmatch(A,B) {
+       
+    var c = "";
+    for (var i = 0; i < B.length/A.length + 1; ++ i) {
+        c += A;
+        if (c.includes(B)) {
+            return B;
+        }
+    }
+    return A;
+};
+        let ishidden1=true;
+        let isblack=false;
+                function myfunc1()
+                {
+                   if(ishidden1==true)
+                   {
+                      document.getElementById('drop1').style.display ="block";
+                      ishidden1=false;
+                      document.getElementById('drop2').style.display ="none";
+                      ishidden2=true;
+                      document.getElementById('drop3').style.display ="none";
+                      ishidden3=true;
+                      document.getElementById('drop4').style.display ="none";
+                      ishidden4=true;
+                      
+                      document.getElementById('profile').style.display="none";
+                      ishiddenp=true;
+                      document.getElementById('dark').style.display="block";
+                      isblack=true;
+                   }
+                   
+                }
+                let ishidden2=true;
+                function myfunc2()
+                {
+                   if(ishidden2==true)
+                   {
+                      document.getElementById('drop1').style.display ="none";
+                      ishidden1=true;
+                      document.getElementById('drop2').style.display ="block";
+                      ishidden2=false;
+                      document.getElementById('drop3').style.display ="none";
+                      ishidden3=true;
+                      document.getElementById('drop4').style.display ="none";
+                      ishidden4=true;
+                     
+                      document.getElementById('profile').style.display="none";
+                      ishiddenp=true;
+                      document.getElementById('dark').style.display="block";
+                      
+                      isblack=true;
+                   }
+                   
+                }
+                let ishidden3=true;
+                function myfunc3()
+                {
+                   if(ishidden3==true)
+                   {
+                      document.getElementById('drop1').style.display ="none";
+                      ishidden1=true;
+                      document.getElementById('drop2').style.display ="none";
+                      ishidden2=true;
+                      document.getElementById('drop3').style.display ="block";
+                      ishidden3=false;
+                      document.getElementById('drop4').style.display ="none";
+                      ishidden4=true;
+                      
+                      document.getElementById('profile').style.display="none";
+                      ishiddenp=true;
+                      document.getElementById('dark').style.display="block";
+
+                      isblack=true;
+                   }
+                   
+                }
+                let ishidden4=true;
+                function myfunc4()
+                {
+                   if(ishidden4==true)
+                   {
+                      document.getElementById('drop1').style.display ="none";
+                      ishidden1=true;
+                      document.getElementById('drop2').style.display ="none";
+                      ishidden2=true;
+                      document.getElementById('drop3').style.display ="none";
+                      ishidden3=true;
+                      document.getElementById('drop4').style.display ="block";
+                      ishidden4=false;
+                     
+                      document.getElementById('profile').style.display="none";
+                      ishiddenp=true;
+                      document.getElementById('dark').style.display="block";
+                      isblack=true;
+                   }
+                }
+                
+                  
+                
+                function myfuncover()
+                {
+                    document.getElementById('drop1').style.display ="none";
+                      ishidden1=true;
+                      document.getElementById('drop2').style.display ="none";
+                      ishidden2=true;
+                      document.getElementById('drop3').style.display ="none";
+                      ishidden3=true;
+                      document.getElementById('drop4').style.display ="none";
+                      ishidden4=true;
+                     
+                      document.getElementById('profile').style.display="none";
+                      ishiddenp=true;
+                      document.getElementById('dark').style.display="none";
+                      isblack=false;
+                }
+                let ishiddenp=true;
+                function myfuncprof()
+                {
+                    document.getElementById('drop1').style.display ="none";
+                      ishidden1=true;
+                      document.getElementById('drop2').style.display ="none";
+                      ishidden2=true;
+                      document.getElementById('drop3').style.display ="none";
+                      ishidden3=true;
+                      document.getElementById('drop4').style.display ="none";
+                      ishidden4=true;
+                      document.getElementById('profile').style.display="block";
+                      ishiddenp=false;
+                      document.getElementById('dark').style.display="none";
+                      isblack=false;
+                }
+                window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.documentElement.scrollTop < 80) {
+    document.getElementById('header').className = "boxshad";
+  } else {
+    document.getElementById('header').className = "header";
+  }
+}
+    </script>
+    </html>
+
+
+
